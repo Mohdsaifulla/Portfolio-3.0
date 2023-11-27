@@ -7,61 +7,71 @@ import Image from "next/image";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Amazon E-Commerce Clone",
     description: "Project 1 description I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
     image: "/images/projects/1.png",
-    videoLink: "https://www.youtube.com/embed/y09UM_9RPMs",
-    tag: ["All", "JavaScript"],
+    videoLink: "https://www.youtube.com/embed/_byJ2tWY2S4?si=21m9h9cUdZvuz3oT",
+    tag: ["All", "TypeScript","Next.js"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Youtube Clone",
     description: "Project 2 description I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
     image: "/images/projects/2.png",
     videoLink:"https://www.youtube.com/embed/y09UM_9RPMs",
-    tag: ["All", "Web"],
+    tag: ["All", "React.js"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "MERN Dashboard",
     description: "Project 3 description I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
     image: "/images/projects/3.png",
-    videoLink:"https://www.youtube.com/embed/y09UM_9RPMs",
-    tag: ["All", "Web"],
+    videoLink:"https://www.youtube.com/embed/Enm2j6kbXUE",
+    tag: ["All", "React.js","MERN"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "Google Search Clone",
     description: "Project 4 description I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
-    videoLink:"https://www.youtube.com/embed/y09UM_9RPMs",
+    videoLink:"https://www.youtube.com/embed/xmzKsXyJjtM",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "React.js"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
+    title: "React Crypto Dashbaord",
     description: "Authentication and CRUD operations I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
     image: "/images/projects/5.png",
-    videoLink:"https://www.youtube.com/embed/y09UM_9RPMs",
-    tag: ["All", "Web"],
+    videoLink:"https://www.youtube.com/embed/iLhKQ02Xfvs",
+    tag: ["All", "React.js"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "Google Form Clone MERN",
     description: "Project 5 description I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
-    videoLink:"https://www.youtube.com/embed/y09UM_9RPMs",
+    videoLink:"https://www.youtube.com/embed/0WXkRogt2Fk",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    tag: ["All", "MERN"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 7,
+    title: "React Customer & Sales Dashboard",
+    description: "Project 5 description I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize,",
+    videoLink:"https://www.youtube.com/embed/Yy5jLtoBLzM",
+    image: "/images/projects/6.png",
+    tag: ["All", "React.js"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -96,11 +106,11 @@ const ProjectsSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="JavaScript"
           isSelected={tag === "JavaScript"}
-        />
+        /> */}
         <ProjectTag
           onClick={handleTagChange}
           name="TypeScript"
@@ -115,6 +125,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Next.js"
           isSelected={tag === "Next.js"}
+        />
+          <ProjectTag
+          onClick={handleTagChange}
+          name="MERN"
+          isSelected={tag === "MERN"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
