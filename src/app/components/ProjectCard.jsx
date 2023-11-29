@@ -13,9 +13,8 @@ const ProjectCard = ({ imgUrl,videolink, title, description, gitUrl, previewUrl 
         
         <iframe src={videolink}       
         allow='autoplay'
-        allowfullscreen
         title='video'
-        mute
+        mute="true" 
         style={{backgroundSize:"cover"}}
         className="w-full h-full"
 />
@@ -23,12 +22,14 @@ const ProjectCard = ({ imgUrl,videolink, title, description, gitUrl, previewUrl 
         <div className="overlay  justify-center absolute top-5 right-11  bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-100 transition-all duration-500 rounded-xl w-16 h-7 items-center">
           <Link
             href={gitUrl}
+            target="_blank"
             className="h-6 w-6 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
             <CodeBracketIcon className="h-6 w-6 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white p-1" />
           </Link>
           <Link
             href={previewUrl}
+            target="_blank"
             className="h-6 w-6 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
             <EyeIcon className="h-6 w-6 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white p-1" />
