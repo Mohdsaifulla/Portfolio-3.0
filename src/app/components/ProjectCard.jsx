@@ -7,7 +7,7 @@ const ProjectCard = ({ imgUrl,videolink, title, description, gitUrl, previewUrl 
   return (
     <div> 
       <div
-        className="h-72 md:h-72 rounded-t-xl relative group"
+        className="h-72 md:h-72 relative group"
         // style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         
@@ -16,7 +16,7 @@ const ProjectCard = ({ imgUrl,videolink, title, description, gitUrl, previewUrl 
         title='video'
         mute="true" 
         style={{backgroundSize:"cover"}}
-        className="w-full h-full"
+        className="w-full h-full rounded-xl"
 />
         
         <div className="overlay  justify-center absolute top-5 right-11  bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-100 transition-all duration-500 rounded-xl w-16 h-7 items-center">

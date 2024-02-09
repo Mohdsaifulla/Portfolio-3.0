@@ -130,7 +130,7 @@ const ProjectsSection = () => {
           isSelected={tag === "MERN"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-1 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
