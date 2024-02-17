@@ -31,7 +31,7 @@ const ThemeToggle = () => {
   // };
 
 
-  
+
 
   const isClient = typeof window !== 'undefined';
 
@@ -62,6 +62,7 @@ const ThemeToggle = () => {
           type="checkbox"
           className="theme-controller"
           value="synthwave"
+          checked={theme === "light"}
           onChange={handleToggle}
         />
 
