@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-  // const [theme, setTheme] = useState(
-  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
-  // );
-  // useEffect(() => {
-  //   localStorage.setItem("theme", theme);
-  //   const localTheme = localStorage.getItem("theme");
-  //   document.querySelector("html").setAttribute("data-theme", localTheme);
-  // }, [theme]);
-  // const handleToggle = (e) => {
-  //   if (e.target.checked) {
-  //     setTheme("light");
-  //   } else {
-  //     setTheme("dark");
-  //   }
-  // };
-
-
-  const [theme, setTheme] = useState("dark");
-
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+  );
   useEffect(() => {
-    document.querySelector("html").setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
-
-  const handleToggle = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
   };
+
+
+  // const [theme, setTheme] = useState("dark");
+
+  // useEffect(() => {
+  //   document.querySelector("html").setAttribute("data-theme", theme);
+  // }, [theme]);
+
+  // const handleToggle = () => {
+  //   setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  // };
 
   return (
     <div>
