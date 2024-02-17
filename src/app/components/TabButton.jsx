@@ -7,11 +7,11 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
+  const buttonClasses = active ? "text-[#0099FF]" : "text-[#9900FF]";
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p className={`mr-3 font-semibold hover:text-[#0099FF] ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
