@@ -6,14 +6,16 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
+import TechStack from "./components/TechStack";
 
 export default function Home() {
  
   return (
     <main>
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-8 py-4 flex flex-col items-center justify-center">
         <HeroSection />
+        <TechStack/>
         <AboutSection />
         <ProjectsSection />
         <EmailSection />

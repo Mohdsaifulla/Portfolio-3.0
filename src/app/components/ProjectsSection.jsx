@@ -7,67 +7,92 @@ import Image from "next/image";
 const projectsData = [
   {
     id: 1,
+    title: "Full Stack Insta Clone",
+    description:
+      "Tech Stack: React Vite, FireBase, Zustand, Chakra UI,FramerMotion, ",
+    image: "/images/projects/1.png",
+    videoLink: "https://www.youtube.com/embed/CLuQQ2PpLxs?si=pfejigPbXn5_doWE",
+    tag: ["All", "TypeScript", "Next.js", "MERN"],
+    gitUrl: "https://github.com/Mohdsaifulla/Instagram-Clone",
+    previewUrl: "https://instagram-clone-sable-ten.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Fashion clothings",
+    description:
+      "Tech Stack: Next.js Page Router, TypeScript, Tailwind Css, Redux Toolkit, Next Auth, Stripe.",
+    image: "/images/projects/1.png",
+    videoLink: "https://www.youtube.com/embed/L_nCwkX_qYA?si=3Nmr8Ezx2im14v7N",
+    tag: ["All", "TypeScript", "Next.js"],
+    gitUrl: "https://github.com/Mohdsaifulla/Fashion-Next",
+    previewUrl: "https://fashion-next-hazel.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Amazon E-Commerce Clone",
-    description: "Tech Stack: Next.js Page Router, TypeScript, Tailwind Css, Redux Toolkit, Next Auth, Stripe.",
+    description:
+      "Tech Stack: Next.js Page Router, TypeScript, Tailwind Css, Redux Toolkit, Next Auth, Stripe.",
     image: "/images/projects/1.png",
     videoLink: "https://www.youtube.com/embed/_byJ2tWY2S4?si=21m9h9cUdZvuz3oT",
-    tag: ["All", "TypeScript","Next.js"],
+    tag: ["All", "TypeScript", "Next.js"],
     gitUrl: "https://github.com/Mohdsaifulla/totalitycorp-frontend-challenge",
     previewUrl: "https://totalitycorp-frontend-challenge-ten-lake.vercel.app/",
   },
   {
-    id: 2,
+    id: 4,
     title: "Youtube Clone",
     description: "Tech Stack: React Vite, Material UI (MUI), YouTube API's.",
-    videoLink:"https://www.youtube.com/embed/y09UM_9RPMs",
+    videoLink: "https://www.youtube.com/embed/y09UM_9RPMs",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/Mohdsaifulla/YouTube-Clone",
     previewUrl: "https://my-you-tube-video-clone.netlify.app/",
   },
   {
-    id: 3,
+    id: 5,
     title: "MERN Dashboard",
-    description: "Tech Stack: React, Tailwind Css, MUI, D3 Charts, Apex Chart, Node.js, Express, Mongoose, MongoDB Atlas.",
-    videoLink:"https://www.youtube.com/embed/Enm2j6kbXUE",
-    tag: ["All", "React.js","MERN"],
+    description:
+      "Tech Stack: React, Tailwind Css, MUI, D3 Charts, Apex Chart, Node.js, Express, Mongoose, MongoDB Atlas.",
+    videoLink: "https://www.youtube.com/embed/Enm2j6kbXUE",
+    tag: ["All", "React.js", "MERN"],
     gitUrl: "https://github.com/Mohdsaifulla/Frontend-Mern-Dashboard",
     previewUrl: "https://coruscating-salamander-ccd895.netlify.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Google Search Clone",
     description: "Tech Stack: React.js, Tailwind Css,Google Api's.",
-    videoLink:"https://www.youtube.com/embed/xmzKsXyJjtM",
+    videoLink: "https://www.youtube.com/embed/xmzKsXyJjtM",
     image: "/images/projects/4.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/Mohdsaifulla/Google-Search-Application",
     previewUrl: "https://google-search-application-12.netlify.app/",
   },
   {
-    id: 5,
+    id: 7,
     title: "React Crypto Dashbaord",
     description: "Tech Stack: React.js, HTML, CSS, Apex Chart, Crypto Api's.",
     image: "/images/projects/5.png",
-    videoLink:"https://www.youtube.com/embed/iLhKQ02Xfvs",
+    videoLink: "https://www.youtube.com/embed/iLhKQ02Xfvs",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/Mohdsaifulla/ReactDashboard",
     previewUrl: "https://glittery-dodol-70c1c6.netlify.app/",
   },
   {
-    id: 6,
+    id: 8,
     title: "Google Form Clone MERN",
-    description: "Tech Stack: React.js ,Tailwind Css, Node.js, Express, Mongoose, MongoDB Atlas, Node Mailer.",
-    videoLink:"https://www.youtube.com/embed/0WXkRogt2Fk",
+    description:
+      "Tech Stack: React.js ,Tailwind Css, Node.js, Express, Mongoose, MongoDB Atlas, Node Mailer.",
+    videoLink: "https://www.youtube.com/embed/0WXkRogt2Fk",
     image: "/images/projects/6.png",
     tag: ["All", "MERN"],
     gitUrl: "https://github.com/Mohdsaifulla/Google_Form-Clone",
     previewUrl: "https://admirable-pony-10ae14.netlify.app/",
   },
   {
-    id: 7,
+    id: 9,
     title: "React Customer & Sales Dashboard",
     description: "Tech Stack: React ,Tailwind Css, React Chart, MUI.",
-    videoLink:"https://www.youtube.com/embed/Yy5jLtoBLzM",
+    videoLink: "https://www.youtube.com/embed/Yy5jLtoBLzM",
     image: "/images/projects/6.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/Mohdsaifulla/Product-Dashboard",
@@ -104,11 +129,6 @@ const ProjectsSection = () => {
           name="All"
           isSelected={tag === "All"}
         />
-        {/* <ProjectTag
-          onClick={handleTagChange}
-          name="JavaScript"
-          isSelected={tag === "JavaScript"}
-        /> */}
         <ProjectTag
           onClick={handleTagChange}
           name="TypeScript"
@@ -124,7 +144,7 @@ const ProjectsSection = () => {
           name="Next.js"
           isSelected={tag === "Next.js"}
         />
-          <ProjectTag
+        <ProjectTag
           onClick={handleTagChange}
           name="MERN"
           isSelected={tag === "MERN"}
@@ -139,7 +159,7 @@ const ProjectsSection = () => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
-      <ProjectCard
+            <ProjectCard
               key={project.id}
               title={project.title}
               description={project.description}
@@ -148,7 +168,7 @@ const ProjectsSection = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
-     </motion.li>
+          </motion.li>
         ))}
       </ul>
     </section>
