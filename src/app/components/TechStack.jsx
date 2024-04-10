@@ -91,7 +91,11 @@ const TechStack = () => {
               className="flex  items-center"
               style={{ minWidth: "120px" }}
             >
-              <img src={item.img} alt={item.name} className="w-36" />
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-24 sm:w-36 border border-fuchsia-500 p-2 m-2 rounded-lg  tech-stack"
+              />
             </div>
           ))}
         </div>
@@ -106,10 +110,14 @@ const TechStack = () => {
           {techImgTwo.map((item, index) => (
             <div
               key={index}
-              className="flex  items-center"
+              className="flex  items-center "
               style={{ minWidth: "120px" }}
             >
-              <img src={item.img} alt={item.name} className="w-36" />
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-24 sm:w-36 border border-fuchsia-500 p-2 m-2 rounded-lg tech-stack"
+              />
             </div>
           ))}
         </div>

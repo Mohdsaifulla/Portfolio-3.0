@@ -16,19 +16,9 @@
   }
 }
 
-
- /* @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.tech-stack{
+  box-shadow: 0px 9px 30px rgba(189, 38, 179, 0.3);
 }
 
-.image-gallery {
-  display: flex;
 
-  animation: scroll 600ms linear infinite;
-} */
 

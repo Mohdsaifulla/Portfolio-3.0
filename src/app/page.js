@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="container mt-24 mx-auto px-8 py-4 flex flex-col items-center justify-center">
+      <div className="container mt-24 mx-auto px-4 py-4 flex flex-col items-center justify-center">
         <HeroSection />
         <TechStack/>
         <AboutSection />
