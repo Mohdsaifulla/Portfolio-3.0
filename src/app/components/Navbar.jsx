@@ -23,12 +23,17 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  // bg-[#121212]
   return (
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10  bg-opacity-100 backdrop-blur-sm">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href={"/"} className="text-2xl md:text-5xl font-bold">
-          Saif ☕︎
+          <div className="flex gap-2">
+            <span className="">𝘴𝘢𝘪𝘧</span>
+            <img
+              src="/ball.png"
+              className="w-8 h-8 sm:w-12 sm:h-12 animate-bounce"
+            />
+          </div>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -59,6 +64,9 @@ const Navbar = () => {
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      <div className="absolute  right-[95px] top-[8px] sm:top-[12px] sm:right-[135px] md:hidden flex">
+        <ThemeToggle />
+      </div>
     </nav>
   );
 };

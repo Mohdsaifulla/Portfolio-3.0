@@ -12,15 +12,26 @@ const projectsData = [
       "Tech Stack: React Vite, FireBase, Zustand, Chakra UI,FramerMotion, ",
     image: "/images/projects/1.png",
     videoLink: "https://www.youtube.com/embed/CLuQQ2PpLxs?si=pfejigPbXn5_doWE",
-    tag: ["All", "TypeScript", "Next.js", "MERN"],
+    tag: ["All", "TypeScript", "Next.js", "Full Stack"],
     gitUrl: "https://github.com/Mohdsaifulla/Instagram-Clone",
     previewUrl: "https://instagram-clone-sable-ten.vercel.app/",
   },
   {
     id: 2,
+    title: "Foody.com",
+    description:
+      "Tech Stack: React Vite, Redux tookit Firebase, Stripe, Daisy UI, ",
+    image: "/images/projects/1.png",
+    videoLink: "https://www.youtube.com/embed/2Mkk2ZLRH9A?si=uQKT1SgvEVvh0-lY",
+    tag: ["All", "React.js"],
+    gitUrl: "https://github.com/Mohdsaifulla/Foody.com",
+    previewUrl: "https://foody-com-chi.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Fashion clothings",
     description:
-      "Tech Stack: Next.js Page Router, TypeScript, Tailwind Css, Redux Toolkit, Next Auth, Stripe.",
+      "Tech Stack: Next.js App Router, TypeScript, Tailwind Css, Redux Toolkit, Next Auth, Stripe.",
     image: "/images/projects/1.png",
     videoLink: "https://www.youtube.com/embed/L_nCwkX_qYA?si=3Nmr8Ezx2im14v7N",
     tag: ["All", "TypeScript", "Next.js"],
@@ -28,7 +39,7 @@ const projectsData = [
     previewUrl: "https://fashion-next-hazel.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Amazon E-Commerce Clone",
     description:
       "Tech Stack: Next.js Page Router, TypeScript, Tailwind Css, Redux Toolkit, Next Auth, Stripe.",
@@ -39,7 +50,7 @@ const projectsData = [
     previewUrl: "https://totalitycorp-frontend-challenge-ten-lake.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Youtube Clone",
     description: "Tech Stack: React Vite, Material UI (MUI), YouTube API's.",
     videoLink: "https://www.youtube.com/embed/y09UM_9RPMs",
@@ -48,17 +59,17 @@ const projectsData = [
     previewUrl: "https://my-you-tube-video-clone.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "MERN Dashboard",
     description:
       "Tech Stack: React, Tailwind Css, MUI, D3 Charts, Apex Chart, Node.js, Express, Mongoose, MongoDB Atlas.",
     videoLink: "https://www.youtube.com/embed/Enm2j6kbXUE",
-    tag: ["All", "React.js", "MERN"],
+    tag: ["All", "React.js", "Full Stack"],
     gitUrl: "https://github.com/Mohdsaifulla/Frontend-Mern-Dashboard",
     previewUrl: "https://coruscating-salamander-ccd895.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Google Search Clone",
     description: "Tech Stack: React.js, Tailwind Css,Google Api's.",
     videoLink: "https://www.youtube.com/embed/xmzKsXyJjtM",
@@ -68,7 +79,7 @@ const projectsData = [
     previewUrl: "https://google-search-application-12.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "React Crypto Dashbaord",
     description: "Tech Stack: React.js, HTML, CSS, Apex Chart, Crypto Api's.",
     image: "/images/projects/5.png",
@@ -78,18 +89,18 @@ const projectsData = [
     previewUrl: "https://glittery-dodol-70c1c6.netlify.app/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Google Form Clone MERN",
     description:
       "Tech Stack: React.js ,Tailwind Css, Node.js, Express, Mongoose, MongoDB Atlas, Node Mailer.",
     videoLink: "https://www.youtube.com/embed/0WXkRogt2Fk",
     image: "/images/projects/6.png",
-    tag: ["All", "MERN"],
+    tag: ["All", "Full Stack"],
     gitUrl: "https://github.com/Mohdsaifulla/Google_Form-Clone",
     previewUrl: "https://admirable-pony-10ae14.netlify.app/",
   },
   {
-    id: 9,
+    id: 10,
     title: "React Customer & Sales Dashboard",
     description: "Tech Stack: React ,Tailwind Css, React Chart, MUI.",
     videoLink: "https://www.youtube.com/embed/Yy5jLtoBLzM",
@@ -146,8 +157,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="MERN"
-          isSelected={tag === "MERN"}
+          name="Full Stack"
+          isSelected={tag === "Full Stack"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
